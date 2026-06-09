@@ -772,7 +772,7 @@ p { color: var(--muted); font-size: 17px; }
 }
 .case-metrics {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
   gap: 10px;
 }
 .case-metrics div {
@@ -788,15 +788,15 @@ p { color: var(--muted); font-size: 17px; }
 }
 .case-metrics strong {
   color: var(--text);
-  font-size: clamp(28px, 2.35vw, 38px);
+  font-size: clamp(24px, 1.55vw, 30px);
   line-height: 1;
   white-space: nowrap;
 }
 .case-metrics span {
-  margin-top: 10px;
+  margin-top: 9px;
   color: var(--gold);
-  font-size: 13px;
-  line-height: 1.25;
+  font-size: 12px;
+  line-height: 1.18;
   text-transform: uppercase;
 }
 .case-media {
