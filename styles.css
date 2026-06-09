@@ -608,7 +608,7 @@ p { color: var(--muted); font-size: 17px; }
 .process-timeline li {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 92px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) 70px minmax(0, 1fr);
   align-items: start;
 }
 .process-timeline li:not(:last-child)::after {
@@ -650,7 +650,7 @@ p { color: var(--muted); font-size: 17px; }
 }
 .process-timeline article {
   width: min(640px, 100%);
-  padding: 0 46px;
+  padding: 0 22px;
 }
 .process-timeline h3 {
   margin: 0 0 12px;
