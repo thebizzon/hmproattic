@@ -868,9 +868,16 @@ p { color: var(--muted); font-size: 17px; }
 
 .cta-band, .final-cta { text-align: center; background: var(--bg-deep); }
 .button-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
+.service-areas h2,
+.service-areas p {
+  text-align: center;
+}
 .city-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 32px; }
 .city-grid span { padding: 18px 20px; background: var(--panel); border: 1px solid var(--line); color: var(--gold); font-weight: 700; }
 
+.faq h2 {
+  text-align: center;
+}
 .faq-list { display: grid; gap: 14px; margin-top: 36px; }
 .faq-item { border: 1px solid var(--line); background: var(--panel); }
 .faq-question { width: 100%; display: flex; justify-content: space-between; gap: 20px; padding: 22px 24px; border: 0; background: transparent; color: var(--text); font: inherit; font-weight: 800; text-align: left; cursor: pointer; }
