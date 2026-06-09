@@ -190,7 +190,7 @@ a { color: inherit; }
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  background: url("./assets/images/hero.jpg") center/cover no-repeat;
+  background: url("./assets/images/hero-attic-insulation.jpg") center/cover no-repeat;
 }
 
 .hero::before {
