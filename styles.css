@@ -453,6 +453,27 @@ p { color: var(--muted); font-size: 17px; }
 #included .service-card p {
   max-width: 280px;
 }
+.credential-grid .credential-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  padding: 22px 18px;
+  text-align: center;
+}
+.credential-grid .credential-card img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  margin: 0 0 22px;
+}
+.credential-grid .credential-card h3 {
+  max-width: 270px;
+}
+.credential-grid .credential-card p {
+  max-width: 280px;
+}
 
 .cr02 {
   position: relative;
