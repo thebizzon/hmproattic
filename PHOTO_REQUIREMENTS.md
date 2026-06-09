@@ -20,7 +20,10 @@ All active website photos are in `assets/images/`. Current files are temporary c
 | `woodinville-case-thermal.jpg` | Woodinville case-study gallery | Thermal imaging result, leak map, or photo of thermal camera use during diagnostics. | Horizontal 4:3 or 3:2. Blur private details if needed. |
 | `woodinville-case-result.jpg` | Woodinville case-study gallery | Finished attic work, improved insulation, sealed penetrations, or final project condition. | Horizontal 4:3 or 3:2. Clean and credible. |
 | `woodinville-case-report.jpg` | Woodinville case-study gallery | rCloud/report screenshot, before-after metric documentation, or verification result. | Horizontal 4:3 or 3:2. Hide private address/client details. |
-| `blower-door-equipment.jpg` | Section image for testing tools | Professional blower door fan, Retrotec equipment, pressure gauge, thermal camera, or technician using diagnostic tools. | Horizontal 4:3 or 3:2. Equipment should be the clear subject. |
+| `blower-door-equipment.jpg` | Main/default gallery photo for "The Same Type of Tools Used in Home Performance Testing" | Professional blower door fan, Retrotec equipment, or technician setting up a blower door test. | Horizontal 4:3 or 3:2. Equipment should be the clear subject. |
+| `testing-pressure-gauge.jpg` | Testing tools gallery thumbnail/detail | Pressure gauge, manometer, Retrotec controller, or close-up of diagnostic measurement equipment during a test. | Horizontal 4:3 or 3:2. Readings can be visible, but avoid private home details. |
+| `testing-thermal-camera.jpg` | Testing tools gallery thumbnail/detail | Thermal camera, infrared scan, or technician using thermal imaging during home performance diagnostics. | Horizontal 4:3 or 3:2. The tool or thermal evidence should be clear. |
+| `testing-written-report.jpg` | Testing tools gallery thumbnail/detail | Written report, before/after documentation, rCloud/report screen, or diagnostic result summary. | Horizontal 4:3 or 3:2. Hide customer address and private details. |
 
 ## Replacement Rules
 
