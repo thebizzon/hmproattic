@@ -408,6 +408,27 @@ p { color: var(--muted); font-size: 17px; }
 .proof-grid img, .service-card img, .credential-card img { width: 76px; height: 76px; object-fit: cover; margin-bottom: 20px; }
 .proof-grid h3, .service-card h3, .credential-card h3 { color: var(--text); }
 .proof-grid p, .service-card p, .credential-card p { font-size: 15px; margin-bottom: 0; }
+.proof-strip .proof-grid article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  border: 0;
+  padding: 22px 18px;
+}
+.proof-strip .proof-grid img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  margin: 0 0 22px;
+}
+.proof-strip .proof-grid h3 {
+  max-width: 260px;
+}
+.proof-strip .proof-grid p {
+  max-width: 270px;
+}
 
 .cr02 {
   position: relative;
