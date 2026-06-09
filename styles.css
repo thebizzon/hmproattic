@@ -696,20 +696,22 @@ p { color: var(--muted); font-size: 17px; }
   position: absolute;
   top: 15px;
   bottom: 15px;
-  left: 178px;
+  left: 160px;
   width: 2px;
   background: var(--text);
 }
 .case-step {
   position: relative;
   display: grid;
-  grid-template-columns: 150px 56px minmax(0, 1fr);
+  grid-template-columns: 138px 44px minmax(0, 1fr);
   gap: 0;
 }
 .case-label {
   color: var(--gold);
   font-size: 17px;
   font-weight: 800;
+  padding-right: 8px;
+  text-align: right;
 }
 .case-dot {
   position: relative;
@@ -734,49 +736,61 @@ p { color: var(--muted); font-size: 17px; }
 }
 .diagnosis-table {
   display: grid;
-  border: 1px solid var(--text);
+  max-width: 680px;
+  gap: 8px;
 }
 .diagnosis-table div {
   display: grid;
-  grid-template-columns: 1fr 120px;
-  min-height: 34px;
-  border-bottom: 1px solid var(--text);
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  min-height: 48px;
+  padding: 9px 10px 9px 16px;
+  border: 1px solid rgba(237,185,113,.35);
+  background: rgba(237,185,113,.055);
 }
-.diagnosis-table div:last-child {
-  border-bottom: 0;
-}
-.diagnosis-table span,
-.diagnosis-table strong {
+.diagnosis-table div > span,
+.diagnosis-table div > strong {
   display: flex;
   align-items: center;
-  padding: 5px 10px;
   font-size: 16px;
   font-weight: 500;
 }
 .diagnosis-table strong {
   justify-content: flex-end;
-  border-left: 1px solid var(--text);
+  min-width: 86px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(237,185,113,.12);
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.diagnosis-table strong span {
+  margin-left: 2px;
   color: var(--gold);
+  font-size: 13px;
+  font-weight: 700;
 }
 .case-metrics {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
+  gap: 10px;
 }
 .case-metrics div {
   min-height: 112px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 18px 14px;
+  min-width: 0;
+  padding: 18px 10px;
   border: 1px solid var(--gold-line);
   background: rgba(237,185,113,.06);
   text-align: center;
 }
 .case-metrics strong {
   color: var(--text);
-  font-size: clamp(30px, 3vw, 44px);
+  font-size: clamp(28px, 2.35vw, 38px);
   line-height: 1;
+  white-space: nowrap;
 }
 .case-metrics span {
   margin-top: 10px;
@@ -864,6 +878,8 @@ p { color: var(--muted); font-size: 17px; }
   .case-label {
     grid-column: 2;
     margin-bottom: 8px;
+    padding-right: 0;
+    text-align: left;
   }
   .case-dot {
     grid-column: 1;
@@ -882,10 +898,13 @@ p { color: var(--muted); font-size: 17px; }
   .diagnosis-table div {
     grid-template-columns: 1fr 76px;
   }
-  .diagnosis-table span,
-  .diagnosis-table strong {
+  .diagnosis-table div > span,
+  .diagnosis-table div > strong {
     padding: 6px 8px;
     font-size: 13px;
+  }
+  .diagnosis-table strong {
+    min-width: 66px;
   }
   .case-metrics {
     grid-template-columns: 1fr 1fr;
