@@ -107,9 +107,64 @@ function renderFaq() {
   });
 }
 
+function initGalleries() {
+  const lightbox = document.querySelector('[data-lightbox]');
+  const lightboxImage = document.querySelector('[data-lightbox-image]');
+  let lastFocused = null;
+
+  const closeLightbox = () => {
+    if (!lightbox || !lightboxImage) return;
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('lightbox-open');
+    if (lastFocused) lastFocused.focus();
+  };
+
+  const openLightbox = (src, alt, trigger) => {
+    if (!lightbox || !lightboxImage) return;
+    lastFocused = trigger || document.activeElement;
+    lightboxImage.src = src;
+    lightboxImage.alt = alt;
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('lightbox-open');
+    const closeButton = lightbox.querySelector('[data-lightbox-close]');
+    if (closeButton) closeButton.focus();
+  };
+
+  document.querySelectorAll('[data-gallery]').forEach((gallery) => {
+    const mainImage = gallery.querySelector('[data-gallery-main]');
+    const openButton = gallery.querySelector('[data-gallery-open]');
+    const thumbs = gallery.querySelectorAll('[data-gallery-thumb]');
+    if (!mainImage || !openButton || !thumbs.length) return;
+
+    thumbs.forEach((thumb) => {
+      thumb.addEventListener('click', () => {
+        mainImage.src = thumb.dataset.src;
+        mainImage.alt = thumb.dataset.alt || '';
+        openButton.setAttribute('aria-label', `Open ${mainImage.alt || 'photo'}`);
+        thumbs.forEach((item) => item.classList.toggle('active', item === thumb));
+      });
+    });
+
+    openButton.addEventListener('click', () => {
+      openLightbox(mainImage.src, mainImage.alt, openButton);
+    });
+  });
+
+  document.querySelectorAll('[data-lightbox-close]').forEach((button) => {
+    button.addEventListener('click', closeLightbox);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeLightbox();
+  });
+}
+
 initMenu();
 renderCards('includedGrid', includedItems, 'service-card');
 renderCards('credentialsGrid', credentialItems, 'credential-card');
 renderList('compareLeft', compareLeft);
 renderList('compareRight', compareRight);
 renderFaq();
+initGalleries();

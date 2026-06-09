@@ -201,7 +201,28 @@
           <p>Many Seattle homes lose heat through small openings around recessed lights, attic hatches, top plates, plumbing penetrations, bath fans, and disconnected ductwork. If those leaks are not sealed first, new insulation can still underperform because warm indoor air moves through it and escapes into the attic.</p>
           <p>That is why HM-PRO treats the attic as part of the whole house. We look at air movement, moisture risk, ventilation, ductwork, and insulation depth before recommending the scope of work.</p>
         </div>
-        <img class="split-image" src="./assets/images/attic-air-leak-problem.jpg" alt="Dark attic renovation space showing hidden home performance issues">
+        <div class="problem-gallery" data-gallery>
+          <button class="gallery-main" type="button" data-gallery-open aria-label="Open attic air leak photo">
+            <img src="./assets/images/attic-air-leak-problem.jpg" alt="Dark attic renovation space showing hidden home performance issues" data-gallery-main>
+          </button>
+          <div class="gallery-thumbs" aria-label="Attic air leak photo thumbnails">
+            <button class="gallery-thumb active" type="button" data-gallery-thumb data-src="./assets/images/attic-air-leak-problem.jpg" data-alt="Dark attic renovation space showing hidden home performance issues" aria-label="Show attic air leak overview">
+              <img src="./assets/images/attic-air-leak-problem.jpg" alt="">
+            </button>
+            <button class="gallery-thumb" type="button" data-gallery-thumb data-src="./assets/images/attic-air-leak-hatch.jpg" data-alt="Attic hatch and framing gaps that can leak conditioned air" aria-label="Show attic hatch air leak detail">
+              <img src="./assets/images/attic-air-leak-hatch.jpg" alt="">
+            </button>
+            <button class="gallery-thumb" type="button" data-gallery-thumb data-src="./assets/images/attic-recessed-light-leak.jpg" data-alt="Recessed light penetration that can leak air into the attic" aria-label="Show recessed light air leak detail">
+              <img src="./assets/images/attic-recessed-light-leak.jpg" alt="">
+            </button>
+            <button class="gallery-thumb" type="button" data-gallery-thumb data-src="./assets/images/attic-ductwork-leak.jpg" data-alt="Attic ductwork problem that can waste heated air" aria-label="Show attic ductwork issue">
+              <img src="./assets/images/attic-ductwork-leak.jpg" alt="">
+            </button>
+            <button class="gallery-thumb" type="button" data-gallery-thumb data-src="./assets/images/attic-ventilation-gap.jpg" data-alt="Attic ventilation and framing gaps that need correction before insulation" aria-label="Show attic ventilation gap detail">
+              <img src="./assets/images/attic-ventilation-gap.jpg" alt="">
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -380,6 +401,14 @@
     <div>Lic. #HMPROL*792CH</div>
     <div>BPI-Trained &middot; Retrotec Certified &middot; Serving King &amp; Snohomish County, WA</div>
   </footer>
+
+  <div class="lightbox" data-lightbox aria-hidden="true">
+    <button class="lightbox-backdrop" type="button" data-lightbox-close aria-label="Close photo"></button>
+    <figure class="lightbox-content">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close photo"></button>
+      <img src="./assets/images/attic-air-leak-problem.jpg" alt="" data-lightbox-image>
+    </figure>
+  </div>
 
   <script src="./script.js"></script>
 </body>
