@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css?v=20260609-5">
+  <link rel="stylesheet" href="./styles.css?v=20260609-6">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -279,17 +279,80 @@
     </section>
 
     <section class="section case-study" id="case-study">
-      <div class="section-inner split">
-        <div class="split-copy">
-          <h2>Real Project: Woodinville, WA</h2>
-          <p>A 2007-built home in Woodinville felt drafty and had high heating bills. The owner wanted measured answers, not generic insulation recommendations.</p>
-          <div class="metric-row">
-            <strong>5.32 ACH50</strong><span>Before</span>
-            <strong>4.27 ACH50</strong><span>After</span>
-            <strong>-19.7%</strong><span>Air leakage reduction</span>
+      <div class="section-inner case-study-inner">
+        <div class="section-heading">
+          <h2>Real Project</h2>
+          <p>Woodinville, WA</p>
+        </div>
+
+        <div class="case-study-layout">
+          <div class="case-story">
+            <article class="case-step">
+              <div class="case-label">The Problem</div>
+              <div class="case-dot" aria-hidden="true"></div>
+              <div class="case-copy">
+                <h3>Drafty rooms. High bills. New-ish house.</h3>
+                <p>A 2007-built home in Woodinville felt drafty and had high heating bills. The owner wanted measured answers, not generic insulation recommendations.</p>
+              </div>
+            </article>
+
+            <article class="case-step">
+              <div class="case-label">The Diagnosis</div>
+              <div class="case-dot" aria-hidden="true"></div>
+              <div class="case-copy">
+                <h3>Thermal imaging revealed the leak map.</h3>
+                <p>With the Retrotec blower door depressurizing the home, thermal imaging documented the primary leak sources.</p>
+                <div class="diagnosis-table" aria-label="Primary thermal leak sources">
+                  <div><span>Recessed light fixtures</span><strong>+13.3F</strong></div>
+                  <div><span>Disconnected duct in attic</span><strong>+11.5F</strong></div>
+                  <div><span>Attic hatch perimeter</span><strong>+9.1F</strong></div>
+                  <div><span>Bath fan penetrations</span><strong>+7.8F</strong></div>
+                  <div><span>Top plate transitions</span><strong>+6.2F</strong></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="case-step">
+              <div class="case-label">The Result</div>
+              <div class="case-dot" aria-hidden="true"></div>
+              <div class="case-copy">
+                <h3>Documented. Honest. Verifiable.</h3>
+                <p>Air leakage reduced by 827 CFM50. Work completed in 2 days, no drywall touched.</p>
+                <div class="case-metrics" aria-label="Woodinville project measured results">
+                  <div><strong>5.32</strong><span>ACH50 before</span></div>
+                  <div><strong>4.27</strong><span>ACH50 after</span></div>
+                  <div><strong>-19.7%</strong><span>Air leakage reduction</span></div>
+                  <div><strong>827</strong><span>CFM50 leakage eliminated</span></div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="case-media">
+            <div class="problem-gallery" data-gallery>
+              <button class="gallery-main" type="button" data-gallery-open aria-label="Open Woodinville project photo">
+                <img src="./assets/images/woodinville-case-problem.jpg" alt="Woodinville project attic before improvements" data-gallery-main>
+              </button>
+              <div class="gallery-thumbs" aria-label="Woodinville case study photo thumbnails">
+                <button class="gallery-thumb active" type="button" data-gallery-thumb data-src="./assets/images/woodinville-case-problem.jpg" data-alt="Woodinville project attic before improvements" aria-label="Show Woodinville problem photo">
+                  <img src="./assets/images/woodinville-case-problem.jpg" alt="">
+                </button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="./assets/images/woodinville-case-diagnostics.jpg" data-alt="Woodinville blower door diagnostic setup" aria-label="Show Woodinville diagnostics photo">
+                  <img src="./assets/images/woodinville-case-diagnostics.jpg" alt="">
+                </button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="./assets/images/woodinville-case-thermal.jpg" data-alt="Woodinville thermal imaging leak source documentation" aria-label="Show Woodinville thermal imaging photo">
+                  <img src="./assets/images/woodinville-case-thermal.jpg" alt="">
+                </button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="./assets/images/woodinville-case-result.jpg" data-alt="Woodinville attic after air sealing and insulation improvements" aria-label="Show Woodinville result photo">
+                  <img src="./assets/images/woodinville-case-result.jpg" alt="">
+                </button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="./assets/images/woodinville-case-report.jpg" data-alt="Woodinville project measured report and verification result" aria-label="Show Woodinville report photo">
+                  <img src="./assets/images/woodinville-case-report.jpg" alt="">
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <img class="split-image" src="./assets/images/woodinville-case-study-results.jpg" alt="Woodinville attic air sealing case study results">
       </div>
     </section>
 
@@ -434,6 +497,6 @@
     </figure>
   </div>
 
-  <script src="./script.js?v=20260609-5"></script>
+  <script src="./script.js?v=20260609-6"></script>
 </body>
 </html>
