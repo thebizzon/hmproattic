@@ -497,6 +497,9 @@ p { color: var(--muted); font-size: 17px; }
   display: grid;
   gap: 42px;
 }
+.gallery-split-inner .split {
+  align-items: start;
+}
 .gallery-block-heading {
   max-width: 1000px;
   margin: 0 auto;
