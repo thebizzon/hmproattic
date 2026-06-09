@@ -493,7 +493,13 @@ p { color: var(--muted); font-size: 17px; }
 .reverse { grid-template-columns: 1fr 1fr; }
 .split-image { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border: 1px solid var(--line); }
 .split-copy p { font-size: 18px; }
-.problem-section .split-copy h2 {
+.gallery-split-inner {
+  display: grid;
+  gap: 42px;
+}
+.gallery-block-heading {
+  max-width: 1000px;
+  margin: 0 auto;
   text-align: center;
 }
 
