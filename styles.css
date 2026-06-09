@@ -294,7 +294,7 @@ a { color: inherit; }
   letter-spacing: 0;
 }
 .title-mobile { display: none; }
-.hero p { max-width: 880px; margin: 0; color: var(--gold); font-size: clamp(17px, 2vw, 24px); line-height: 1.28; }
+.hero p { max-width: 880px; margin: 0; color: var(--text); font-size: clamp(17px, 2vw, 24px); line-height: 1.28; }
 
 .seo-subtitle {
   position: absolute !important;
