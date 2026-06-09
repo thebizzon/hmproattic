@@ -75,7 +75,7 @@ function renderCards(containerId, items, className) {
   if (!container) return;
   container.innerHTML = items.map(([icon, title, text]) => `
     <article class="${className}">
-      <img src="./assets/icons/${icon}" alt="">
+      <img loading="lazy" decoding="async" src="./assets/icons/${icon}" alt="">
       <h3>${title}</h3>
       <p>${text}</p>
     </article>

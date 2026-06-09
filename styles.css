@@ -296,7 +296,9 @@ a { color: inherit; }
   text-transform: uppercase;
   letter-spacing: 0;
 }
-.title-mobile { display: none; }
+.hero h1 span {
+  display: block;
+}
 .hero p { max-width: 880px; margin: 0; color: var(--text); font-size: clamp(17px, 2vw, 24px); line-height: 1.28; }
 
 .seo-subtitle {
@@ -1005,8 +1007,6 @@ p { color: var(--muted); font-size: 17px; }
     line-height: 1.08;
     overflow-wrap: break-word;
   }
-  .title-desktop { display: none; }
-  .title-mobile { display: block; }
   .hero p {
     width: 100%;
     font-size: 16px;
