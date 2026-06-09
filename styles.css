@@ -4,9 +4,9 @@
   --panel: #1d1d1d;
   --panel-2: #222;
   --text: #f7ebdd;
-  --muted: rgba(247, 235, 221, 0.68);
-  --subtle: rgba(247, 235, 221, 0.48);
   --gold: #edb971;
+  --muted: #edb971;
+  --subtle: rgba(237, 185, 113, 0.72);
   --gold-soft: rgba(237, 185, 113, 0.12);
   --line: rgba(247, 235, 221, 0.16);
   --gold-line: rgba(237, 185, 113, 0.58);
@@ -18,7 +18,7 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   background: var(--bg);
-  color: var(--text);
+  color: var(--gold);
   font-family: Inter, Arial, sans-serif;
   line-height: 1.55;
 }
@@ -294,7 +294,7 @@ a { color: inherit; }
   letter-spacing: 0;
 }
 .title-mobile { display: none; }
-.hero p { max-width: 880px; margin: 0; color: var(--text); font-size: clamp(17px, 2vw, 24px); line-height: 1.28; }
+.hero p { max-width: 880px; margin: 0; color: var(--gold); font-size: clamp(17px, 2vw, 24px); line-height: 1.28; }
 
 .seo-subtitle {
   position: absolute !important;
@@ -443,8 +443,8 @@ p { color: var(--muted); font-size: 17px; }
 .compare-card.gold { border-color: var(--gold-line); background: linear-gradient(145deg, rgba(237,185,113,.08), rgba(0,0,0,.16)), var(--panel-2); }
 .compare-card h3 { color: var(--gold); text-transform: uppercase; letter-spacing: .1em; font-size: 14px; }
 .compare-card ul { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 22px; }
-.compare-card li { display: grid; grid-template-columns: 22px 1fr; gap: 12px; align-items: center; color: rgba(247,235,221,.58); }
-.compare-card.gold li { color: rgba(247,235,221,.88); }
+.compare-card li { display: grid; grid-template-columns: 22px 1fr; gap: 12px; align-items: center; color: rgba(237,185,113,.72); }
+.compare-card.gold li { color: var(--gold); }
 .compare-card li::before { content: "X"; display: grid; place-items: center; width: 22px; height: 22px; color: var(--danger); border: 1px solid currentColor; font-weight: 800; line-height: 1; }
 .compare-card.gold li::before { content: "\2713"; color: var(--gold); background: var(--gold-soft); }
 
