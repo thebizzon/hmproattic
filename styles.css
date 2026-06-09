@@ -860,10 +860,10 @@ p { color: var(--muted); font-size: 17px; }
 .price-card { border-radius: 8px; padding: 42px 30px; }
 .price-card h3 { color: var(--text); font-size: 25px; text-align: center; text-transform: uppercase; }
 .price-sub { color: var(--subtle); text-align: center; }
-.price { margin: 28px 0; color: var(--gold); font-size: clamp(36px, 4vw, 48px); font-weight: 800; }
+.price { margin: 28px 0; color: var(--gold); font-size: clamp(36px, 4vw, 48px); font-weight: 800; text-transform: uppercase; }
 .price-card ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 16px; }
-.price-card li { display: grid; grid-template-columns: 18px 1fr; gap: 12px; color: var(--text); line-height: 2.325; }
-.price-card li::before { content: "\2713"; display: grid; place-items: center; width: 18px; height: 18px; border: 1px solid var(--gold-line); background: var(--gold-soft); color: var(--gold); font-size: 12px; }
+.price-card li { display: grid; grid-template-columns: 18px 1fr; gap: 12px; align-items: start; color: var(--text); line-height: 2.325; text-transform: uppercase; }
+.price-card li::before { content: "\2713"; display: block; width: 18px; height: 18px; margin-top: 9px; border: 1px solid var(--gold-line); background: var(--gold-soft); color: var(--gold); font-size: 12px; line-height: 18px; text-align: center; }
 .price-minimum { margin: 30px 0 0; color: var(--gold); text-align: center; }
 
 .cta-band, .final-cta { text-align: center; background: var(--bg-deep); }
