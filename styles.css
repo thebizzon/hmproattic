@@ -365,19 +365,23 @@ h3 { margin: 0 0 12px; font-size: 22px; line-height: 1.2; }
 p { color: var(--muted); font-size: 17px; }
 
 .intro-section { background: var(--bg); }
+.intro-inner {
+  display: grid;
+  gap: 42px;
+}
+.intro-heading {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
 .intro-split {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(340px, 0.9fr);
   gap: clamp(34px, 5vw, 72px);
-  align-items: center;
+  align-items: start;
 }
 .intro-copy {
   max-width: 680px;
-}
-.intro-copy h2 {
-  margin-bottom: 28px;
-  font-size: clamp(34px, 3.8vw, 56px);
-  text-align: center;
 }
 .intro-copy p {
   font-size: 19px;
