@@ -1,0 +1,12 @@
+.idea/
+
+# Local Tilda/source notes kept in the workspace, not in the public site repo.
+ATTIC_INSULATION_TILDA_PAGE_SPEC*.md
+TILDA_IMPLEMENTATION_CHECKLIST.md
+block_*.html
+img/
+ref/
+static_attic_site/
+
+# Temporary QA artifacts.
+qa-*.png
