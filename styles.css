@@ -594,17 +594,17 @@ p { color: var(--muted); font-size: 17px; }
 .process-timeline {
   position: relative;
   display: grid;
-  gap: 0;
+  gap: 46px;
   max-width: 1120px;
-  margin: 10px auto 0;
+  margin: 20px auto 0;
   padding: 0;
   list-style: none;
 }
 .process-timeline::before {
   content: "";
   position: absolute;
-  top: 24px;
-  bottom: 24px;
+  top: 27px;
+  bottom: 27px;
   left: 50%;
   width: 2px;
   background: var(--text);
@@ -614,8 +614,7 @@ p { color: var(--muted); font-size: 17px; }
   position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 72px minmax(0, 1fr);
-  min-height: 156px;
-  align-items: center;
+  align-items: start;
 }
 .process-timeline li:nth-child(odd) article {
   grid-column: 1;
@@ -646,6 +645,7 @@ p { color: var(--muted); font-size: 17px; }
 .process-timeline article {
   width: min(430px, 100%);
   padding: 0 28px;
+  transform: translateY(2px);
 }
 .process-timeline h3 {
   margin: 0 0 12px;
