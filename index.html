@@ -122,16 +122,27 @@
     <aside class="menu-panel" id="siteMenu" aria-hidden="true">
       <button class="menu-close" type="button" aria-label="Close menu" data-menu-close></button>
       <nav class="menu-links" aria-label="Page sections">
-        <a href="#included">Included</a>
-        <a href="#case-study">Case Study</a>
+        <a href="#top">Home</a>
+        <a href="#included">Services</a>
+        <a href="#process">Process</a>
         <a href="#pricing">Pricing</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#service-areas">Service Areas</a>
         <a href="#faq">FAQ</a>
+        <a href="#contacts">Contact</a>
       </nav>
       <div class="menu-footer">
         <div>HM-PRO</div>
         <div>General Contractor King County, WA</div>
-        <a class="menu-phone" href="tel:+12065300018">(206) 530-0018</a>
-        <a class="btn btn-primary" href="https://hm-pro.us/contacts">Book Attic Assessment</a>
+        <div class="menu-contact">
+          <span>Phone</span>
+          <a href="tel:+12065300018" data-contact="phone-short">(206) 530-0018</a>
+        </div>
+        <div class="menu-contact">
+          <span>Email</span>
+          <a href="mailto:2065300018wa@gmail.com" data-contact="email">2065300018wa@gmail.com</a>
+        </div>
+        <a class="btn btn-primary" href="#contacts" data-cta="assessment">Book Attic Assessment</a>
       </div>
     </aside>
   </header>
@@ -164,7 +175,10 @@
           </h1>
           <p class="seo-subtitle">Licensed Washington general contractor serving Seattle, Redmond, Bellevue, Sammamish, Mercer Island, Kirkland, and Greater King County. HM-PRO provides attic insulation, air sealing, blower door testing, thermal imaging, ventilation improvements, ductwork corrections, and documented home energy performance upgrades.</p>
           <p>At HM-PRO we diagnose your attic with professional blower door testing and thermal imaging, fix the real issues - air leaks, ductwork, ventilation, bath fans - then insulate properly and re-test to prove the result.</p>
-          <a class="btn btn-primary" href="https://hm-pro.us/contacts">Book Attic Assessment</a>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacts" data-cta="assessment">Book Attic Assessment</a>
+            <a class="btn btn-secondary" href="tel:+12065300018" data-cta="call">Call (206) 530-0018</a>
+          </div>
         </div>
       </div>
     </section>
@@ -189,7 +203,7 @@
         <article>
           <img loading="lazy" decoding="async" src="./assets/icons/icon-licensed-wa-contractor.png" alt="">
           <h3>Licensed WA General Contractor</h3>
-          <p>Washington contractor license #HMPROL*792CH. Bonded and insured.</p>
+          <p>Washington contractor license <a class="license-link" href="https://secure.lni.wa.gov/verify/Detail.aspx?UBI=604679265&amp;LIC=HMPROL*792CH&amp;SAW=" target="_blank" rel="noopener">#HMPROL*792CH</a>. Bonded and insured.</p>
         </article>
         <article>
           <img loading="lazy" decoding="async" src="./assets/icons/icon-blower-door-tested.png" alt="">
@@ -257,7 +271,7 @@
       </div>
     </section>
 
-    <section class="section process-section">
+    <section class="section process-section" id="process">
       <div class="section-inner">
         <div class="section-heading">
           <h2>We Measure Before We Work. And Again After.</h2>
@@ -444,6 +458,30 @@
       <h2>INSULATION IS ONLY PART OF THE JOB.</h2>
     </section>
 
+    <section class="section reviews-section" id="reviews">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>These Reviews Say It Better</h2>
+          <p>Recent homeowner feedback from Thumbtack, plus direct links to the full Google and Thumbtack review pages.</p>
+        </div>
+
+        <div class="review-source-grid" aria-label="Review source links">
+          <a class="review-source-card" href="https://www.thumbtack.com/wa/redmond/furniture-assembly/hm-pro-llc/service/392433618942492683?utm_medium=web&utm_source=txt&surface=sp&referrer_pk=369524403815432195#ServicePageReviewsSection" target="_blank" rel="noopener">
+            <span>Thumbtack</span>
+            <strong>284 reviews</strong>
+            <em>View all Thumbtack reviews</em>
+          </a>
+          <a class="review-source-card" href="https://www.google.com/maps/place/HM-Pro,+LLC/@47.7089064,-122.191515,49065m/data=!3m1!1e3!4m8!3m7!1s0x8fc8b2cba00db737:0xaf90f5a8fc8f9807!8m2!3d47.648372!4d-122.212179!9m1!1b1!16s%2Fg%2F11svfb3p6g?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
+            <span>Google</span>
+            <strong>26 reviews</strong>
+            <em>View all Google reviews</em>
+          </a>
+        </div>
+
+        <div class="review-grid" id="reviewGrid"></div>
+      </div>
+    </section>
+
     <section class="section pricing" id="pricing">
       <div class="section-inner">
         <div class="section-heading">
@@ -490,13 +528,13 @@
         <h2>Start With a Free Phone Consultation</h2>
         <p>Have questions about attic insulation, air sealing, rebates, or project cost? Start with a short phone consultation.</p>
         <div class="button-row">
-          <a class="btn btn-primary" href="tel:+12065300018">Call (206) 530-0018</a>
-          <a class="btn btn-secondary" href="https://hm-pro.us/contacts">Book Attic Assessment</a>
+          <a class="btn btn-primary" href="#contacts" data-cta="assessment">Book Attic Assessment</a>
+          <a class="btn btn-secondary" href="tel:+12065300018" data-cta="call">Call (206) 530-0018</a>
         </div>
       </div>
     </section>
 
-    <section class="section service-areas">
+    <section class="section service-areas" id="service-areas">
       <div class="section-inner">
         <h2>Attic Insulation and Air Sealing in Seattle and Nearby Cities</h2>
         <p>HM-PRO serves homeowners throughout King County and Snohomish County, including Seattle, Bellevue, Redmond, Sammamish, Kirkland, Mercer Island, Woodinville, Issaquah, Bothell, Monroe, Snohomish, Mill Creek, and nearby communities.</p>
@@ -518,8 +556,75 @@
         <h2>Ready to Make Your Seattle Attic Perform Better?</h2>
         <p>Book an attic assessment with HM-PRO. We will inspect, test, explain what is happening, and give you a clear scope with pricing before work begins.</p>
         <div class="button-row">
-          <a class="btn btn-primary" href="https://hm-pro.us/contacts">Book Attic Assessment</a>
-          <a class="btn btn-secondary" href="tel:+12065300018">Call (206) 530-0018</a>
+          <a class="btn btn-primary" href="#contacts" data-cta="assessment">Book Attic Assessment</a>
+          <a class="btn btn-secondary" href="tel:+12065300018" data-cta="call">Call (206) 530-0018</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contacts-section" id="contacts">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>Contact HM-PRO</h2>
+          <p>Talk with a licensed Washington general contractor before you schedule attic insulation, air sealing, or diagnostic testing.</p>
+        </div>
+        <div class="contacts-grid">
+          <article class="contact-card">
+            <span>Contact</span>
+            <p>HM-PRO General Contractor</p>
+            <p>KING County, WA</p>
+            <p>Phone: <a href="tel:+12065300018" data-contact="phone-long">+1 (206) 530-00-18</a></p>
+            <p>Email: <a href="mailto:2065300018wa@gmail.com" data-contact="email">2065300018wa@gmail.com</a></p>
+          </article>
+          <article class="contact-card">
+            <span>Location & License</span>
+            <p>Redmond, WA</p>
+            <p>License Holder: Mikhail Makrushin</p>
+            <p>License Type: Construction Contractor (WA)</p>
+            <strong>License #: <a class="license-link" href="https://secure.lni.wa.gov/verify/Detail.aspx?UBI=604679265&amp;LIC=HMPROL*792CH&amp;SAW=" target="_blank" rel="noopener">HMPROL*792CH</a></strong>
+          </article>
+        </div>
+        <div class="contacts-block">
+          <div class="contacts-brand">
+            <div>HM-PRO General Contractor</div>
+            <strong>KING County, WA</strong>
+          </div>
+
+          <div class="contacts-rule"></div>
+
+          <dl class="contacts-list">
+            <div>
+              <dt>PHONE:</dt>
+              <dd><a href="tel:+12065300018">+1 (206) 530-00-18</a></dd>
+            </div>
+            <div>
+              <dt>EMAIL:</dt>
+              <dd><a href="mailto:2065300018wa@gmail.com">2065300018wa@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>BUSINESS HOURS:</dt>
+              <dd></dd>
+            </div>
+            <div>
+              <dt>Mon–Fri:</dt>
+              <dd>9:00 AM – 6:00 PM</dd>
+            </div>
+            <div>
+              <dt>Sat–Sun:</dt>
+              <dd>By appointment</dd>
+            </div>
+          </dl>
+
+          <div class="contacts-rule contacts-rule-spaced"></div>
+
+          <div class="contacts-license">
+            <p>Redmond , WA</p>
+            <p>License Holder: Mikhail Makrushin</p>
+            <p>License Type: Construction Contractor (WA)</p>
+            <p>License number: <span><a class="license-link" href="https://secure.lni.wa.gov/verify/Detail.aspx?UBI=604679265&amp;LIC=HMPROL*792CH&amp;SAW=" target="_blank" rel="noopener">#HMPROL*792CH</a></span></p>
+          </div>
+
+          <p class="contacts-copyright">©2026, HM-Pro LLC. All Rights Reserved.</p>
         </div>
       </div>
     </section>
@@ -527,7 +632,7 @@
 
   <footer class="footer">
     <div>HM-PRO, LLC</div>
-    <div>Lic. #HMPROL*792CH</div>
+    <div>Lic. <a class="license-link" href="https://secure.lni.wa.gov/verify/Detail.aspx?UBI=604679265&amp;LIC=HMPROL*792CH&amp;SAW=" target="_blank" rel="noopener">#HMPROL*792CH</a></div>
     <div>BPI-Trained &middot; Retrotec Certified &middot; Serving King &amp; Snohomish County, WA</div>
   </footer>
 
